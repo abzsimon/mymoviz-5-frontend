@@ -20,7 +20,7 @@ function Home() {
     // ];
 
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('https://mymoviz-5-backend-nu.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
         setMoviesData(data.movies.results);
